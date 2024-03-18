@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Seznamy a Tabulky</h1>
+    <h2>Tvorba seznamů</h2>
+    <h3>USPOŘÁDANÝ SEZNAM (ORDERED LIST)</h2>
+    <ol>
+        <li>Google Chrome</li>
+        <li>Internet Explorer</li>
+        <li>Mozila Firefox</li>
+    </ol>
+    <h3>NEUSPOŘÁDANÝ SEZNAM (UNORDERED LIST)</h2>
+    <ul>
+        <li>IP adresy (např. IPv4: 190.168.23.1, IPv6)</li>
+        <li>DNS adresy (např. strojka.opava.cz)</li>
+        <li>URL adresy (např. http://moodle.sspu-opava.cz:81/course/view.php?id=95)</li>
+    </ul>
+    <h3>VNOŘENÝ SEZNAM</h2>
+            <ul>
+            <li>Hardware</li>
+                <ol>
+                <li>Základní jednotka</li>
+                    <ol>
+                    <li>procesor (CPU)</li>
+                    <li>paměť (RAM)</li>
+                    <li>pevný disk (HDD)</li>
+                    </ol>
+                </ol>
+                <ol>
+                    <li>Vstupní zařízení</li>
+                    <ol>
+                        <li>klávesnice</li>
+                        <li>myš</li>
+                    </ol>
+                </ol>
+                <ol>
+                    <li>Výstupní zařízení</li>
+                    <ol>
+                        <li>monitor</li>
+                        <li>tiskárna</li>
+                    </ol>
+                </ol>
+            </ul>
+            <ul>
+            <li>Software</li>
+                <ol>
+                <li>Základní programové vybavení</li>
+                    <ol>
+                        <li>operační systém</li>
+                        <li>ovladač</li>
+                        <li>firmware</li>
+                    </ol>
+                <ol>
+                <li>Aplikace</li>
+                    <ol>
+                        <li>textový editor</li>
+                        <li>prohlížeč</li>
+                        <li>antivirový program</li>
+                    </ol>
+                </ol>
+            </ul>
+    <h3>POPISNÝ SEZNAM (DESCRIPTION LIST)</h3>
+    <h4>Internet Society (ISOC)</h4>
+    <p>
+        Mezinárodní organizace pro globální koordinaci a kooperaci v rámci internetu.
+    </p>
+    <h4>World Wide Web Consortium (W3C)</h4>
+    <p>
+        Mezinárodní konsorcium jehož členové společně s veřejností vyvíjejí webové standarty pro službu WWW.
+    </p>
+    <h4>Internet Assigned Numbers Authority (IANA)</h4>
+    <p>
+        Organizace, která dohlíží celosvětově na přidělování IP adres, správu kořenových zón DNS, definování typů medíí pro MIME, a dalšínáležitosti internetových protokolů.
+    </p>
+    <h2>Tvorba tabulek</h2>
+    <p>
+        Komplexní tabulka v HTML, může být tvořena záhlavím, tělem a zápatím. Pomocí atributů colspan, a rowspan můžeme vytvořit sloučené buňky, které přesahují přes více řádnků i sloupců.
+    </p>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan = 2>Název oboru</th>
+                <th rowspan = 2>Kód oboru</th>
+                <th>Počet tříd</th>
+                <th rowspan = 3>Počty žáků</th>
+            </tr>
+            <tr>
+                <th>Chlapci</th>
+                <th>Dívky</th>
+                <th>Celkem</th>
+            </tr>
+        </thead>
+        <tbody>
+            <th>
+                <td>Informační technologie</td>
+                <td>18-20-M/01</td>
+                <td>4</td>
+                <td>116</td>
+                <td>10</td>
+                <td>126</td>
+            </th>
+            <th>
+                <td>Strojírenství</td>
+                <td>23-41-M/01</td>
+                <td>8</td>
+                <td>172</td>
+                <td>0</td>
+                <td>172</td>
+            </th>
+            <td>Umělecké programy</td> 
+            <td>82-41-M/04, 82-41-M/05, 82-41-M/06</td>
+            <td>13</td>
+            <td>82</td>
+            <td>95</td>
+        </tbody>
+    </table>
+</body>
+</html>
